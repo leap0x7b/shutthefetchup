@@ -1,0 +1,31 @@
+#!/bin/sh
+RED=$(printf "\033[1;31m")
+NORMAL=$(printf "\033[0m")
+
+colors1() {
+    for i in 0 1 2 3 4 5 6 7; do
+        printf "\033[4${i}m   \033[0m"
+    done
+}
+
+colors2() {
+    for i in 0 1 2 3 4 5 6 7; do
+        printf "\033[10${i}m   \033[0m"
+    done
+}
+
+cat <<EOF
+${RED}  _____ _______   shutthe@fuckup
+${RED} / ____|__   __|  ${NORMAL}--------------
+${RED}| (___    | |     I dont care:${NORMAL} about your fetch stuff
+${RED} \___ \   | |     In fact,:${NORMAL} I'm getting tired of all of this BS
+${RED} ____) |  | |     ramfetch, a fetch that displays memory i-:${NORMAL} SHUT UP
+${RED}|_____/   |_|     yfetch - a minimal command-li-:${NORMAL} FUCK OFF
+${RED} ______ _    _    cpufetch - Simplistic yet fa-:${NORMAL} NO ITS NOT FANCY ITS OVERDONE
+${RED}|  ____| |  | |   blablablafetc-:${NORMAL} GET THE FUCK OUT OF MY REDDIT FRONTPAGE
+${RED}| |__  | |  | |   If I saw one more fetch BS:${NORMAL} I'll fucking destroy my computer
+${RED}|  __| | |  | |   and never use:${NORMAL} Reddit ever again
+${RED}| |    | |__| |   ${NORMAL}
+${RED}|_|     \____/    ${NORMAL}$(colors1)
+                  $(colors2)
+EOF
